@@ -150,9 +150,8 @@ def main():
     if st.button("Predict"):
         # 按训练顺序组装输入行
         row = [
-            self_rate_health, BMI, working_status,
-            adl, urbanrural, marriage, age,
-            ph_activities, pain, household_income, score_norm
+            self_rate_health, pain, age, gender,
+            BMI, ph_activities, adl, household_income
         ]
         input_df = pd.DataFrame([row], columns=FEATURES)
 
