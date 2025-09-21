@@ -76,7 +76,7 @@ GENDER_FMT = lambda x: "Female" if x == 0 else "Male"
 # 加载模型；为部分环境提供 numpy._core 兼容兜底
 @st.cache_resource
 def load_model():
-    model_path = 'lasi_result.pkl'
+    model_path = 'share_result.pkl'
     try:
         return joblib.load(model_path)
     except ModuleNotFoundError as e:
