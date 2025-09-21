@@ -130,7 +130,7 @@ def main():
 
     with col2:
         gender = st.selectbox(
-            FEATURE_LABELS['pain'], GENDER_OPTIONS, format_func=GENDER_FMT
+            FEATURE_LABELS['gender'], GENDER_OPTIONS, format_func=GENDER_FMT
         )
         BMI = st.selectbox(
             FEATURE_LABELS['BMI'], BMI_OPTIONS, format_func=BMI_FMT
